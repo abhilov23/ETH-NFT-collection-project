@@ -1,66 +1,60 @@
-## Foundry
+# 🧱 BasicNFT Deployment - Sepolia Network
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This document records the successful deployment and verification of the `BasicNFT` contract to the Sepolia testnet using Foundry.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 📦 Contract Details
 
-## Documentation
+- **Contract Name:** `BasicNFT`
+- **Deployed Address:** [`0xb1F6D4b745fd6D809f5C58faDbA01c268767dC13`](https://sepolia.etherscan.io/address/0xb1f6d4b745fd6d809f5c58fadba01c268767dc13)
+- **Network:** Sepolia (Chain ID: `11155111`)
+- **Deployer Address:** _not shown_
+- **Compiler Version:** `0.8.28`
 
-https://book.getfoundry.sh/
+---
 
-## Usage
+## ⚙️ Deployment Summary
 
-### Build
+- **Estimated Gas Price:** `0.024400598` gwei  
+- **Estimated Gas Used:** `2,353,427`  
+- **Estimated Cost:** `~0.00005742 ETH`
 
-```shell
-$ forge build
-```
+---
 
-### Test
+## ✅ Transaction Receipt
 
-```shell
-$ forge test
-```
+- **Status:** Success  
+- **Transaction Hash:** [`0xd23e54b5110acf4e279d4ff03e10ebfdcc54b23ff8a8cb4dc938b76eaad61e13`](https://sepolia.etherscan.io/tx/0xd23e54b5110acf4e279d4ff03e10ebfdcc54b23ff8a8cb4dc938b76eaad61e13)  
+- **Block Number:** `8117936`  
+- **Gas Used:** `1,810,329`  
+- **Gas Price:** `0.011929608` gwei  
+- **Total Paid:** `0.000021596515321032 ETH`  
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## 🔍 Verification Status
 
-### Gas Snapshots
+- **Verification Started:** Yes
+- **Etherscan Status:** ✅ Verified  
+- **Verification GUID:** `hpt82rd8vyndbshwlvl5ijs7unsug9nftaknerb58nzuk7fxgf`  
+- **Verification Link:** [Etherscan Contract Page](https://sepolia.etherscan.io/address/0xb1f6d4b745fd6d809f5c58fadba01c268767dc13)
 
-```shell
-$ forge snapshot
-```
+---
 
-### Anvil
+## 📁 Output Paths
 
-```shell
-$ anvil
-```
+- **Transactions JSON:**  
+  `/broadcast/DeployBasicNft.s.sol/11155111/run-latest.json`
 
-### Deploy
+- **Secrets/Sensitive Cache:**  
+  `/cache/DeployBasicNft.s.sol/11155111/run-latest.json`
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+---
 
-### Cast
+## ✅ Final Status
 
-```shell
-$ cast <subcommand>
-```
+> 🎉 **On-chain execution completed successfully. Contract is live and verified on Sepolia.**
 
-### Help
+---
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
