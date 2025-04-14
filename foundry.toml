@@ -6,6 +6,8 @@ remappings = [
   "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
   "@foundry-devops=lib/foundry-devops/src"
 ]
+ffi=true
+
 
 
 

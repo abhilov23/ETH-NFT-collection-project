@@ -86,5 +86,5 @@ deploy:
 
 # Mint an NFT using the Interactions script
 mint:
-	@forge script script/Interactions.s.sol:MintBasicNft $(NETWORK_ARGS)
+	@forge script script/Interactions.s.sol:MintBasicNft $(NETWORK_ARGS) --ffi 
 
